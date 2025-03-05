@@ -1,0 +1,121 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fullscreen Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Responsive YouTube Video */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none; /* Disables user interactions */
+}
+
+/* Content Overlay */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #1E90FF;
+    z-index: 2;
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Description */
+p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    line-height: 1.6;
+    margin: 0 auto 30px auto;
+}
+
+/* Register Button */
+.register-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #00BFFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Button Hover Effect */
+.register-btn:hover {
+    background-color: #008C9E;
+}
+
+/* Our Services Section */
+.our-services {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+    min-height: 50vh;
+}
+
+/* Our Services Heading */
+.our-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* List of Services */
+.our-services ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.our-services li {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .register-btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+
+    .our-services h2 {
+        font-size: 2rem;
+    }
+
+    .our-services li {
+        font-size: 1.2rem;
+    }
+}
+
