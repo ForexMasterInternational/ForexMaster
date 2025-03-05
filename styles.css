@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #00BFFF; /* Blue text color */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place video behind content */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Makes the video slightly transparent */
+}
+
+.content {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.register-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #00BFFF; /* Button with blue background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #008C9E; /* Darker blue on hover */
+}
+
+.logo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
